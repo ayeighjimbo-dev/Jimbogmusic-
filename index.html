@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <title>Jimbo G | Alternative Trap, Trap Metal & Music Videos</title>
+  <meta name="description" content="The official Jimbo G music archive: alternative trap, trap metal, music videos, lyrics, unreleased demos, and fan access from TMSTW Records.">
+  <link rel="canonical" href="https://jimbogmusic.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jimbo G">
+  <meta property="og:title" content="Jimbo G | The Master Archive">
+  <meta property="og:description" content="Broken songs for late nights. Stream the music, watch the visuals, and enter the vault.">
+  <meta property="og:url" content="https://jimbogmusic.com/">
+  <meta property="og:image" content="https://i.postimg.cc/KYF85NGz/jimbo.webp">
+  <meta property="og:image:alt" content="Jimbo G official artist portrait">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jimbo G | The Master Archive">
+  <meta name="twitter:description" content="Broken songs for late nights. Stream the music, watch the visuals, and enter the vault.">
+  <meta name="twitter:image" content="https://i.postimg.cc/KYF85NGz/jimbo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://open.spotify.com">
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="preload" as="image" href="https://i.postimg.cc/KYF85NGz/jimbo.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Protest+Revolution&family=Space+Mono:wght@400;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Jimbo G",
+    "alternateName": "The Man Who Sold the World",
+    "url": "https://jimbogmusic.com/",
+    "image": "https://i.postimg.cc/KYF85NGz/jimbo.webp",
+    "description": "Alternative trap, trap metal, rap-rock, and emotionally heavy music from Jimbo G.",
+    "genre": ["Alternative Trap", "Trap Metal", "Rap Rock", "Alternative Metal"],
+    "recordLabel": {
+      "@type": "Organization",
+      "name": "TMSTW Records"
+    },
+    "member": {
+      "@type": "Person",
+      "name": "Jimmie Gammon Jr."
+    },
+    "sameAs": [
+      "https://open.spotify.com/artist/3YRU2KNJglDRnIv6e5tNzu",
+      "https://www.youtube.com/@JimboG-TheManWhoSoldTheWorld",
+      "https://tiktok.com/@Jimbo.g0",
+      "https://instagram.com/the_man_who_sold_the_world.77"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --surface: #0b0b0b;
+      --surface-2: #111;
+      --text: #f7f7f7;
+      --muted: #aaa;
+      --accent: #ff3434;
+      --secondary: #4bd8ff;
+      --border: rgba(255,255,255,.12);
+      --max: 1180px;
+      --nav-h: 74px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    body.glitch-active { --accent: #ff0000; --secondary: #fff; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--secondary); outline-offset: 4px; }
+
+    .skip-link {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      z-index: 10000;
+      padding: .75rem 1rem;
+      background: #fff;
+      color: #000;
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .grain {
+      position: fixed;
+      inset: -50%;
+      z-index: 999;
+      pointer-events: none;
+      opacity: .07;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      animation: grain-shift 1.2s steps(2) infinite;
+    }
+    @keyframes grain-shift {
+      0%,100% { transform: translate(0,0); }
+      25% { transform: translate(-1%,1%); }
+      50% { transform: translate(1%,-1%); }
+      75% { transform: translate(1%,1%); }
+    }
+
+    .shell { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+    .eyebrow {
+      margin: 0 0 .75rem;
+      color: var(--accent);
+      font: 700 .72rem/1.4 "Space Mono", monospace;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h2 {
+      font-family: Syne, sans-serif;
+      font-size: clamp(2.1rem, 6vw, 4.6rem);
+      line-height: 1;
+      letter-spacing: -.045em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    h3 { font-family: Syne, sans-serif; }
+    .lede { color: var(--muted); max-width: 720px; font-size: clamp(1rem, 2vw, 1.2rem); }
+
+    .site-nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      min-height: var(--nav-h);
+      background: rgba(5,5,5,.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      min-height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      font-family: "Protest Revolution", sans-serif;
+      font-size: 1.55rem;
+      letter-spacing: .08em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-links { display: flex; align-items: center; gap: 1.15rem; }
+    .nav-links a {
+      color: #c5c5c5;
+      text-decoration: none;
+      font: 700 .68rem "Space Mono", monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .menu-toggle { display: none; }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 48px;
+      padding: .85rem 1.2rem;
+      border: 1px solid transparent;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      font: 800 .72rem "Space Mono", monospace;
+      letter-spacing: .06em;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); background: var(--accent); color: #fff; }
+    .button.secondary { background: transparent; color: #fff; border-color: var(--border); }
+    .button.secondary:hover { border-color: var(--accent); }
+    .button.small { min-height: 40px; padding: .65rem .9rem; }
+
+    .panic-button {
+      min-height: 40px;
+      padding: .6rem .85rem;
+      border: 1px solid #fff;
+      background: var(--accent);
+      color: #000;
+      font: 800 .62rem "Space Mono", monospace;
+      letter-spacing: .05em;
+      cursor: pointer;
+      animation: pulse-shadow 1.2s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-shadow { to { box-shadow: 0 0 20px rgba(255,52,52,.6); } }
+
+    .hero {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: calc(var(--nav-h) + 4rem) 0 4rem;
+      text-align: center;
+      position: relative;
+      isolation: isolate;
+      background:
+        radial-gradient(circle at 50% 70%, rgba(255,52,52,.18), transparent 36%),
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.94)),
+        url("https://i.postimg.cc/KYF85NGz/jimbo.webp") center/cover no-repeat;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 35%;
+      z-index: -1;
+      background: linear-gradient(transparent, var(--bg));
+    }
+    .hero-content { max-width: 980px; }
+    .hero h1 {
+      margin: 0;
+      font-family: "Protest Revolution", sans-serif;
+      font-size: clamp(5rem, 18vw, 13rem);
+      line-height: .72;
+      letter-spacing: -.02em;
+      text-shadow: 0 8px 50px rgba(0,0,0,.9);
+    }
+    .hero-tagline {
+      margin: 1.5rem auto 0;
+      max-width: 780px;
+      color: #ddd;
+      font-family: "Space Mono", monospace;
+      font-size: clamp(.78rem, 2vw, 1rem);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .hero-intro { margin: 1.25rem auto 0; max-width: 660px; color: #c4c4c4; }
+    .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; margin-top: 2rem; }
+
+    main section { padding: clamp(5rem, 10vw, 8rem) 0; border-bottom: 1px solid var(--border); }
+    .section-head { margin-bottom: 2.3rem; }
+
+    .feature-grid,
+    .about-grid,
+    .vault-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: center;
+    }
+    .card {
+      background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
+      border: 1px solid var(--border);
+      padding: clamp(1rem, 3vw, 2rem);
+    }
+    .embed-shell { overflow: hidden; border: 1px solid var(--border); background: #000; }
+    .video-frame { aspect-ratio: 16/9; }
+    iframe { display: block; width: 100%; border: 0; }
+    .video-frame iframe { height: 100%; }
+
+    .track-copy h3 { font-size: clamp(2rem, 5vw, 3.8rem); line-height: .95; text-transform: uppercase; margin-bottom: 1rem; }
+    .track-copy p { color: var(--muted); }
+    .mini-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0; }
+    .chip { padding: .45rem .7rem; border: 1px solid var(--border); color: #ccc; font: 700 .65rem "Space Mono", monospace; text-transform: uppercase; }
+
+    .music-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+    .music-card { border: 1px solid var(--border); background: var(--surface); overflow: hidden; }
+    .music-card-label { padding: 1rem 1rem 0; color: var(--secondary); font: 700 .68rem "Space Mono", monospace; letter-spacing: .12em; text-transform: uppercase; }
+    .music-card iframe { min-height: 352px; }
+
+    .video-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.2rem; }
+    .video-card { background: var(--surface); border: 1px solid var(--border); }
+    .video-info { padding: 1.1rem; }
+    .video-info h3 { margin-bottom: .3rem; font-size: 1.2rem; }
+    .video-info p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    .quote {
+      margin: 0;
+      padding-left: 1.3rem;
+      border-left: 4px solid var(--accent);
+      font: 700 clamp(1.35rem, 3vw, 2.1rem)/1.25 Syne, sans-serif;
+    }
+    .about-copy p { color: #c4c4c4; }
+    .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin-top: 1.5rem; }
+    .stat { padding: 1rem; border: 1px solid var(--border); background: #080808; }
+    .stat strong { display: block; font-family: Syne, sans-serif; font-size: 1.2rem; }
+    .stat span { color: var(--muted); font-size: .82rem; }
+
+    .lab-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+    .lab-card { border: 1px solid var(--border); background: var(--surface); padding: 1.5rem; }
+    .lab-card p { color: var(--muted); }
+    .field-label { display: block; margin-bottom: .5rem; font: 700 .68rem "Space Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .field {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid #333;
+      background: #000;
+      color: #fff;
+      padding: .85rem 1rem;
+    }
+    .output {
+      min-height: 60px;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px dashed #444;
+      color: var(--secondary);
+      font-family: "Space Mono", monospace;
+      word-break: break-word;
+    }
+    .button-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .8rem; }
+
+    .vault {
+      background:
+        radial-gradient(circle at 80% 50%, rgba(75,216,255,.09), transparent 30%),
+        radial-gradient(circle at 15% 50%, rgba(255,52,52,.12), transparent 30%);
+    }
+    .vault-panel { border: 1px solid var(--border); padding: clamp(1.25rem, 4vw, 2.5rem); background: rgba(0,0,0,.55); }
+    .vault-panel input { margin-top: .5rem; }
+    #vault-unlocked { display: none; }
+    .vault-note { color: var(--muted); font-size: .9rem; }
+
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .contact-strip h3 { margin: 0; font-size: clamp(1.5rem, 4vw, 2.4rem); }
+    .socials { display: flex; flex-wrap: wrap; gap: .7rem; }
+
+    footer { padding: 3rem 1rem; text-align: center; color: #777; font: 700 .67rem "Space Mono", monospace; letter-spacing: .08em; }
+
+    .toast {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 2000;
+      max-width: min(360px, calc(100% - 2rem));
+      padding: 1rem;
+      border: 1px solid var(--accent);
+      border-left-width: 5px;
+      background: #080808;
+      color: #fff;
+      font: 700 .72rem "Space Mono", monospace;
+      transform: translateY(130%);
+      opacity: 0;
+      transition: .25s ease;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    body.glitch-active .hero h1 { text-shadow: -4px 0 var(--secondary), 4px 0 var(--accent); }
+    body.glitch-active .grain { opacity: .16; }
+
+    @media (max-width: 820px) {
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+        border: 1px solid var(--border);
+        background: #111;
+        color: #fff;
+        cursor: pointer;
+      }
+      .nav-links {
+        position: absolute;
+        top: var(--nav-h);
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 1rem;
+        background: rgba(5,5,5,.98);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { min-height: 44px; display: flex; align-items: center; }
+      .panic-button { width: 100%; }
+      .feature-grid, .about-grid, .vault-grid { grid-template-columns: 1fr; }
+      .music-grid, .video-list, .lab-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 92svh; }
+      .hero h1 { font-size: clamp(5rem, 27vw, 8rem); }
+    }
+
+    @media (max-width: 520px) {
+      .hero-actions .button { width: 100%; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .contact-strip { padding: 1.2rem; }
+      .socials .button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .grain { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to music</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Jimbo G home">JIMBO G</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#listen">Listen</a>
+        <a href="#videos">Videos</a>
+        <a href="#story">Story</a>
+        <a href="#lab">Fan Lab</a>
+        <a href="#vault">Vault</a>
+        <button class="panic-button" id="panic-toggle" type="button" aria-pressed="false">⚠ DO NOT PRESS ⚠</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="shell hero-content">
+      <p class="eyebrow">TMSTW RECORDS // SYSTEM ONLINE</p>
+      <h1>JIMBO G</h1>
+      <p class="hero-tagline">Alternative trap // trap metal // broken songs for late nights</p>
+      <p class="hero-intro">Raw confession, heavy guitars, bruised melodies, and stories that refuse to stay buried.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://open.spotify.com/artist/3YRU2KNJglDRnIv6e5tNzu" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+        <a class="button secondary" href="https://www.youtube.com/@JimboG-TheManWhoSoldTheWorld" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+        <a class="button secondary" href="#vault">Enter the Vault</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="listen">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Signal 01 // Featured release</p>
+          <h2>Already Gone</h2>
+          <p class="lede">A relationship ends before either person admits it. Start here, then move through the full archive.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="embed-shell">
+            <iframe title="Listen to Already Gone by Jimbo G on Spotify" src="https://open.spotify.com/embed/track/0TddC6LQOkG2IDlFpVPc0N?utm_source=generator&theme=0" height="352" loading="eager" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+          <div class="track-copy">
+            <h3>“You say that you’re leaving, but I’m already gone.”</h3>
+            <p>Built around emotional exhaustion rather than a clean breakup, “Already Gone” captures the moment love becomes repetition, shouting, and survival.</p>
+            <div class="mini-meta">
+              <span class="chip">Alternative Trap</span>
+              <span class="chip">Jimbo G</span>
+              <span class="chip">TMSTW Records</span>
+            </div>
+            <div class="button-row">
+              <button class="button small" id="speak-lyric" type="button">Hear the lyric</button>
+              <button class="button secondary small" id="copy-lyric" type="button">Copy lyric</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="music-grid" style="margin-top: 2rem;">
+          <article class="music-card">
+            <p class="music-card-label">Official discography</p>
+            <iframe title="Jimbo G artist discography on Spotify" src="https://open.spotify.com/embed/artist/3YRU2KNJglDRnIv6e5tNzu?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </article>
+          <article class="music-card">
+            <p class="music-card-label">Curated transmission</p>
+            <iframe title="Jimbo G curated playlist on Spotify" src="https://open.spotify.com/embed/playlist/6YCQmgCezYqiOh6XUj2oSu?utm_source=generator" height="352" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Signal 02 // Official visuals</p>
+          <h2>Watch the archive</h2>
+          <p class="lede">Four different corners of the same emotional wreckage.</p>
+        </div>
+
+        <div class="video-list">
+          <article class="video-card">
+            <div class="video-frame"><iframe title="Now I Lay Me official music video by Jimbo G" src="https://www.youtube.com/embed/dekUz0-V-iM?si=CQYpWu9fKnCGtbre" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="video-info"><h3>Now I Lay Me</h3><p>Prayer, surrender, and the final goodbye.</p></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame"><iframe title="Goodbye official music video by Jimbo G" src="https://www.youtube.com/embed/hEMVb0niry4?si=atFg758b6xHxDpMH" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="video-info"><h3>Goodbye</h3><p>A left turn when nothing right remains.</p></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame"><iframe title="Piñata official music video by Jimbo G" src="https://www.youtube.com/embed/Whry_W2RGNs?si=0uoFoMuOYapUpMCE" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="video-info"><h3>Piñata</h3><p>Cracked open for everybody else’s entertainment.</p></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame"><iframe title="My Favorite Sin official music video by Jimbo G" src="https://www.youtube.com/embed/7SOpo5GQOO0?si=NlT06Wqj4z0DfFBj" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="video-info"><h3>My Favorite Sin</h3><p>Holding onto what should have disappeared.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Signal 03 // Artist file</p>
+          <h2>Not polished. Not painless.</h2>
+          <p>Jimbo G makes music from the collision point between alternative trap, metal, rap-rock, country scars, and late-night confession. The songs are built like private journal entries played through blown speakers—direct, heavy, and human.</p>
+          <p>The Master Archive connects the music, videos, unreleased work, and the community around TMSTW Records in one place.</p>
+          <div class="stat-grid">
+            <div class="stat"><strong>Independent</strong><span>Artist-owned direction</span></div>
+            <div class="stat"><strong>Genre-fluid</strong><span>Trap, metal, rock, acoustic</span></div>
+            <div class="stat"><strong>Visual-first</strong><span>Every release has a world</span></div>
+            <div class="stat"><strong>Unfiltered</strong><span>Story before perfection</span></div>
+          </div>
+        </div>
+        <blockquote class="quote">“The archive is not a greatest-hits page. It is the evidence.”</blockquote>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Signal 04 // Fan lab</p>
+          <h2>Make some static</h2>
+          <p class="lede">Fast, local fan tools that work without exposing a paid AI key in the browser.</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card">
+            <h3>Bio Corruptor</h3>
+            <p>Turn your name or phrase into a copy-ready glitch signal.</p>
+            <label class="field-label" for="glitch-input">Enter text</label>
+            <input class="field" id="glitch-input" type="text" maxlength="80" placeholder="JIMBO G">
+            <div class="output" id="glitch-output" aria-live="polite">SIGNAL_WAITING...</div>
+            <div class="button-row"><button class="button small" id="copy-glitch" type="button">Copy signal</button></div>
+          </article>
+
+          <article class="lab-card">
+            <h3>Late-Night Transmission</h3>
+            <p>Generate a short Jimbo G–style fan caption from a safe local phrase bank.</p>
+            <label class="field-label" for="mood-select">Choose a mood</label>
+            <select class="field" id="mood-select">
+              <option value="heartbreak">Heartbreak</option>
+              <option value="rage">Rage</option>
+              <option value="survival">Survival</option>
+              <option value="faith">Faith</option>
+            </select>
+            <div class="output" id="caption-output" aria-live="polite">Choose a mood and generate a transmission.</div>
+            <div class="button-row">
+              <button class="button small" id="generate-caption" type="button">Generate</button>
+              <button class="button secondary small" id="copy-caption" type="button">Copy</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vault" id="vault">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Signal 05 // Fan access</p>
+          <h2>The Vault</h2>
+          <p class="lede">Unreleased demos and deep cuts. This is a fan Easter egg—not a secure paywall.</p>
+        </div>
+
+        <div id="vault-lock" class="vault-grid">
+          <div class="vault-panel">
+            <h3>Enter an access phrase</h3>
+            <label class="field-label" for="vault-code">Access phrase</label>
+            <input class="field" id="vault-code" type="password" autocomplete="off" placeholder="ENTER ACCESS PHRASE">
+            <div class="button-row"><button class="button" id="unlock-vault" type="button">Unlock vault</button></div>
+            <p class="vault-note">Hint: fans of “Already Gone” already know the phrase.</p>
+          </div>
+          <div class="vault-panel">
+            <h3>Join the real community</h3>
+            <p>Discord is the safest place for release alerts, unreleased material, feedback, and direct fan conversation.</p>
+            <a class="button" href="https://discord.gg/XvBgKBdX" target="_blank" rel="noopener noreferrer">Join Discord</a>
+          </div>
+        </div>
+
+        <div id="vault-unlocked" aria-live="polite">
+          <div class="video-list">
+            <article class="video-card">
+              <div class="video-frame"><iframe title="Jimbo G unreleased demo 1" src="https://www.youtube.com/embed/QM0dBlcKmiE?si=dug_hNMFoxN2q6rB" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="video-info"><h3>Unreleased Demo 01</h3><p>Decrypted vault transmission.</p></div>
+            </article>
+            <article class="video-card">
+              <div class="video-frame"><iframe title="Jimbo G unreleased demo 2" src="https://www.youtube.com/embed/w_Wt3Ra_us8?si=e7j9KAyn65BgzIUM" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="video-info"><h3>Unreleased Demo 02</h3><p>Decrypted vault transmission.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect">
+      <div class="shell contact-strip">
+        <div>
+          <p class="eyebrow">Keep the signal alive</p>
+          <h3>Follow Jimbo G</h3>
+        </div>
+        <div class="socials">
+          <a class="button secondary small" href="https://tiktok.com/@Jimbo.g0" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a class="button secondary small" href="https://www.youtube.com/@JimboG-TheManWhoSoldTheWorld" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a class="button secondary small" href="https://instagram.com/the_man_who_sold_the_world.77" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="button secondary small" href="https://discord.gg/XvBgKBdX" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> JIMBO G // TMSTW RECORDS // SYSTEM_ONLINE</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const $ = (selector) => document.querySelector(selector);
+    const toast = $('#toast');
+    let toastTimer;
+
+    function notify(message) {
+      toast.textContent = `> ${message}`;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    async function copyText(text, successMessage = 'COPIED_TO_CLIPBOARD') {
+      try {
+        await navigator.clipboard.writeText(text);
+        notify(successMessage);
+      } catch {
+        const temp = document.createElement('textarea');
+        temp.value = text;
+        temp.setAttribute('readonly', '');
+        temp.style.position = 'fixed';
+        temp.style.opacity = '0';
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        temp.remove();
+        notify(successMessage);
+      }
+    }
+
+    const menuToggle = $('#menu-toggle');
+    const navLinks = $('#nav-links');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+
+    const panicToggle = $('#panic-toggle');
+    panicToggle.addEventListener('click', () => {
+      const active = document.body.classList.toggle('glitch-active');
+      panicToggle.setAttribute('aria-pressed', String(active));
+      panicToggle.textContent = active ? 'SYSTEM OVERRIDE ACTIVE' : '⚠ DO NOT PRESS ⚠';
+      notify(active ? 'OVERRIDE_INITIATED' : 'SYSTEM_STABILIZED');
+    });
+
+    const featuredLyric = 'You say that you’re leaving, but I’m already gone.';
+    $('#copy-lyric').addEventListener('click', () => copyText(featuredLyric, 'LYRIC_COPIED'));
+    $('#speak-lyric').addEventListener('click', () => {
+      if (!('speechSynthesis' in window)) return notify('VOICE_NOT_SUPPORTED');
+      window.speechSynthesis.cancel();
+      const line = new SpeechSynthesisUtterance(featuredLyric);
+      line.rate = 0.88;
+      line.pitch = 0.75;
+      window.speechSynthesis.speak(line);
+      notify('TRANSMITTING_LYRIC');
+    });
+
+    const glitchChars = ['†','‡','¶','§','ø','æ','ß','ð','ƒ','©','∆'];
+    const glitchInput = $('#glitch-input');
+    const glitchOutput = $('#glitch-output');
+    function corrupt(value) {
+      return value.toUpperCase().split('').map((character, index) => {
+        if (character === ' ') return index % 2 ? ' //' : ' ';
+        return Math.random() > .78 ? glitchChars[Math.floor(Math.random() * glitchChars.length)] : character;
+      }).join('');
+    }
+    glitchInput.addEventListener('input', () => {
+      glitchOutput.textContent = glitchInput.value.trim() ? corrupt(glitchInput.value) : 'SIGNAL_WAITING...';
+    });
+    $('#copy-glitch').addEventListener('click', () => copyText(glitchOutput.textContent, 'SIGNAL_COPIED'));
+
+    const transmissions = {
+      heartbreak: [
+        'Some goodbyes happen long before anybody leaves. — Jimbo G',
+        'We kept calling it love after it became survival. — Jimbo G',
+        'Another late night, another ghost wearing your name. — Jimbo G'
+      ],
+      rage: [
+        'Turn the damage up until it tells the truth. — Jimbo G',
+        'I made a home out of every hell you left me. — Jimbo G',
+        'The wound learned distortion and started singing back. — Jimbo G'
+      ],
+      survival: [
+        'Still here. Still loud. Still building from the wreckage. — Jimbo G',
+        'The scar is not the ending. It is proof the story continued. — Jimbo G',
+        'I did not come back clean. I came back real. — Jimbo G'
+      ],
+      faith: [
+        'Even in the static, I am listening for grace. — Jimbo G',
+        'Some prayers sound like screaming through a blown speaker. — Jimbo G',
+        'I brought the broken pieces. God brought the morning. — Jimbo G'
+      ]
+    };
+    const captionOutput = $('#caption-output');
+    $('#generate-caption').addEventListener('click', () => {
+      const options = transmissions[$('#mood-select').value];
+      captionOutput.textContent = options[Math.floor(Math.random() * options.length)];
+      notify('TRANSMISSION_GENERATED');
+    });
+    $('#copy-caption').addEventListener('click', () => copyText(captionOutput.textContent, 'TRANSMISSION_COPIED'));
+
+    $('#unlock-vault').addEventListener('click', () => {
+      const code = $('#vault-code').value.trim().toUpperCase().replaceAll(' ', '');
+      const accepted = ['ALREADYGONE', 'JIMBOG', 'VOID'];
+      if (!accepted.includes(code)) return notify('INVALID_ACCESS_PHRASE');
+      $('#vault-lock').style.display = 'none';
+      $('#vault-unlocked').style.display = 'block';
+      notify('VAULT_DECRYPTED');
+      $('#vault-unlocked').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    $('#vault-code').addEventListener('keydown', event => {
+      if (event.key === 'Enter') $('#unlock-vault').click();
+    });
+
+    $('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
